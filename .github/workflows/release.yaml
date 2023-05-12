@@ -6,10 +6,6 @@ on:
       - master
     types: [closed]
 
-env:
-   TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
-   TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
-
 jobs:
   release:
     if: github.event.pull_request.merged
