@@ -6,10 +6,6 @@ on:
       - master
     types: [closed]
 
-env:
-   TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
-   TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
-
 jobs:
   release:
     if: github.event.pull_request.merged
@@ -60,5 +56,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release to PyPI
-        if: steps.release_check.outputs.new_release == 'true'
         run: task release
+        env:
+          TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
