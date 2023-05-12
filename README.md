@@ -26,11 +26,11 @@ journify.track('user-123-id', 'Python event', {
   'plan': 'Enterprise'
 })
 
-journify.page('user_id', 'Page category', 'Page name', {
+journify.page('user-123-id', 'Page category', 'Page name', {
   'url': 'http://journify.io'
 })
 
-journify.group('user_id', 'group_id', {
+journify.group('user-123-id', 'group-123-id', {
   'name': 'Initech',
   'domain': 'Accounting Software'
 })
