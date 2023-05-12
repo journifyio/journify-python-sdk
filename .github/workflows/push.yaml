@@ -28,9 +28,3 @@ jobs:
 
       - name: Test code
         run: task test
-
-      - name: Release to PyPI (to remove)
-        run: task release
-        env:
-          TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
-          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
