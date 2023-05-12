@@ -20,5 +20,6 @@ tasks:
   release:
     desc: Release to PyPI
     cmds:
+      - pip install wheel
       - python setup.py sdist bdist_wheel
       - twine upload --skip-existing dist/* --non-interactive
