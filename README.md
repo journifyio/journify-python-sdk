@@ -37,7 +37,7 @@ journify.group('user-123-id', 'group-123-id', {
 ```
 
 ## Documentation
-Documentation is available at [https://docs.journify.io/sources/python-sdk](https://docs.journify.io/sources/python-sdk).
+Documentation is available at [https://docs.journify.io/sources/python](https://docs.journify.io/sources/python).
 
 # Contributing
 You can contribute to Journify Python SDK by forking the repo and making pull requests on the `master` branch.
